@@ -2,7 +2,7 @@
 
 Ricohermoso, Mary Loren P. | 2ECE-B
 
-This repository contains the Programming Assignment 3 for "Advance Computer Programming" this A.Y. 2026-2027. This covers Pandas data analysis conceptss, specifically positional and label-data slicing, Boolean filtering, and multi-model subsetting using the dataset given. 
+This repository contains the Programming Assignment 3 for "Advance Computer Programming" this A.Y. 2026-2027. This covers Pandas data analysis concepts, specifically positional and label-data slicing, Boolean filtering, and multi-model subsetting using the dataset given. 
 
 ## *A. POSITIONAL AND LABEL-BASED SLICING*
 
