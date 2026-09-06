@@ -110,6 +110,8 @@ Combining all these Functions, the code used for this is:
 
 ```Python
 
+import pandas as pd
+
 selected_cars = cars.loc[cars['Model'].isin(['Datsun 710', 'Lotus Europa', 'Ferrari Dino'])
 
 selected_cars = selected_cars.loc[:, ['Model', 'mpg', 'cyl', 'hp', 'gear']]
