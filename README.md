@@ -14,7 +14,7 @@ These are the Functions that are used in this Problem:
 
 Example: 
 
-  `cars = pd.read_csv('cars.csv')`
+          cars = pd.read_csv('cars.csv')
 
 `• .shape` - A DataFrame attribute returning a tuple representing dimensions (rows, columns).
 
@@ -26,13 +26,13 @@ Example:
 
 Example
 
-  `cars.iloc[5:10]`
+          cars.iloc[5:10]
 
 `• .loc()` - A label-based indexing method used to filter DataFrame columns by name.
 
 Example: 
 
-  `cars_6_to_10.loc[:, ['Model', 'mpg', 'cyl', 'hp', 'gear']]`
+            cars_6_to_10.loc[:, ['Model', 'mpg', 'cyl', 'hp', 'gear']]
 
 Combining all these Functions, the code used for this is: 
 
@@ -44,9 +44,12 @@ cars
 
 cars.shape
 
- 
+cars_6_to_10 = cars.iloc [5:10]
+cars_6_to_10
 
-
+cars_6_to_10 = cars_6_to_10.loc[:, ['Model', 'mpg', 'cyl', 'hp', 'gear']]
+cars_6_to_10
+```
 
 
 
