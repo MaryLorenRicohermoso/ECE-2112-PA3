@@ -54,8 +54,10 @@ cars_6_to_10
 ## **B. Model Lookup*
 
   Use Boolean indexing on the `Model` column to look op specific vehicles without row numbers.
-                  *Find the complete row for `'Toyota Corolla', 'Pontiac Firebird'`.
-                  *Displaying only `'Model', 'mpg', 'hp', 'wt'`.
+  
+   *Find the complete row for `'Toyota Corolla', 'Pontiac Firebird'`.
+                  
+   *Displaying only `'Model', 'mpg', 'hp', 'wt'`.
 
 These are the Functions that are used in this Problem:
 
@@ -74,7 +76,6 @@ Example:
 Combining all these Functions, the code used for this is:
 
 ```Python
-
 import pandas as pd
 
 toyota = cars.loc[cars ['Model'] == 'Toyota Corolla']
@@ -82,9 +83,39 @@ toyota
 
 pontiac = cars.loc[cars ['Model"] == 'Pontiac Firebird', ['Model', 'mpg', 'hp', 'wt']]
 pontiac
-
 ```
 
+## C. Multi-Model Subsetting
+
+  Extract records for `"Datsun 710", "Lotus Europa", and "Ferrari Dino"` into a new DataFrame named `selected_cars`, retaining only column `'Models', 'mpg', 'cyl', 'hp', and 'gear'`. Confirm that the final DataFrame contains 3 rows and 5 columns. 
+
+These are the Functions that are used in this Problem:
+
+`• .isin()` - Checks whether elements in a Pandas Series match any values provided in a list. 
+
+Example:
+
+        cars['Model'].isin(['Datsun 710', 'Lotus Europa', 'Ferrari Dino']) 
+
+`• .shape()` - Used to confirm the resulting subset.
+
+Example: 
+    
+        selected_cars.shape ---> (3,5)
+
+
+Combining all these Functions, the code used for this is:
+
+```Python
+
+selected_cars = cars.loc[cars['Model'].isin(['Datsun 710', 'Lotus Europa', 'Ferrari Dino'])
+
+selected_cars = selected_cars.loc[:, ['Model', 'mpg', 'cyl', 'hp', 'gear']]
+selected_cars
+
+selected_cars.shape
+
+```
 
 
 
