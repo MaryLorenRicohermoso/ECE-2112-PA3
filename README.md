@@ -36,7 +36,7 @@ Example:
 
 Combining all these Functions, the code used for this is: 
 
-```Phyton
+```Python
 
 import pandas as pd
 
@@ -121,7 +121,12 @@ selected_cars.shape
 
 ```
 
+## Thank you for reading!
 
+To see the main python program for Programming Assignment 2, click this link  and download. Open on Jupyter Notebook, then run all cells.
+
+# README file Version History:
+September 6, 2026 - Initial README output uploaded
 
 
 
